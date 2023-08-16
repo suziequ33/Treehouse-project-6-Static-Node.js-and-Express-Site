@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Project 1",
+            "description":" Created an app that displays random famous quotes each time a button is clicked. I used quots form Harry Potter. JavaScript Basic Variables, Input and Output Basic Arrays and Loops Object Literals",
+            "technologies":["JavaScript", "HTML", "CSS"],
+            "live_link":"",
+            "github_link":"https://github.com/suziequ33/Project1-Random-Qoute",
+            "image_urls": [
+                "image/project1.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Project 2",
+            "description":"Second project a file contains information for 42 students, including name, email, and picture. Displayed nine students on a page. Add navigation/pagination buttons, that the user can click to display different pages of students.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link":"",
+            "github_link":"https://github.com/suziequ33/Project2-Data-Pagination-And-filtering",
+            "image_urls": [
+                "image/project2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Project 3",
+            "description":" Use JavaScript to interactive registration form for a fictional Full Stack conference. Added cutomized and conditional behavior and interactivity. Validating user input and providing helpful error messages when the user enters incalid information into the form fields. DOM elements, Checkboxes, Validation, preventDefault() method, Validation Errors.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link":"",
+            "github_link":"https://github.com/suziequ33/Interactive-Form-project-3",
+            "image_urls": [
+                "image/project3.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Project 4",
+            "description":"My 4th treehouse project Created a browser-based, word guessing game: 'Phrase Hunter'. Use JavaScript and OOP (Object-Oriented Programming) to select random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link":"",
+            "github_link":"https://github.com/suziequ33/treehouse-project-4-OOP-Game-Show-App",
+            "image_urls": [
+                "image/project4.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Project 5",
+            "description":"Build an app for a fictional company called Awesome Startup. Use the Random User Generator API to grab information for 12 random 'employees', and use that data to build a prototype for an Awesome Startup employmee directory. Request a JSON object from the API and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee's image or name will open a modal window with more detailed information.",
+            "technologies":["JavaScript", "HTML", "CSS"],
+            "live_link":"",
+            "github_link":"https://github.com/suziequ33/treehouse-project-5-Public-API-Requests",
+            "image_urls": [
+                "image/project5.jpg"
+            ]
+        }
+    ]
+}
