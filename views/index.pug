@@ -14,11 +14,12 @@ block content
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
+    each project in projects
       .cell 
-        a(href=project.link)
-          img.thumbnail(src='https://placehold.it/550x550', alt='')
-          h5= projectTitle
-          p= projectDescription
+        a(href=project.live_link)
+          img.thumbnail(src=`/static/${project.image_urls[0]}`, alt=`Thumbnail for ${project.project_name}`)
+          h5= project.project_name
+          p= project.description
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       
@@ -31,4 +32,4 @@ block content
           a(href='#')
             img.thumbnail(src='https://placehold.it/550x550', alt='')
             h5 My Site
-
+//-took me sometime to figure out why the projects and pitures were not woring. I didnt each iterator them
