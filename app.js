@@ -7,7 +7,7 @@ const data = require('./data.json');
 app.set('view engine', 'pug');
 
 //set the static files from the 'public' directory under the '/static' path
-app.use('/static',express.static('public'));
+app.use('/static', express.static('public'));
 
 //"index" routes to render the "home" page with project data
 app.get('/', (req, res) => {
@@ -22,12 +22,8 @@ app.get('/about', (req, res) => {
 //Dynmic 'project' routes based on project id
 app.get('/project/:id', (req, res) => {
     const projectId = req.params.id;
-    const project = data.projects.find(proj => proj.id === Number(projectId));
-    if (project) {
-        res.render('project', {project});
-    } else {
-        res.status(404).send('Project not found');
-    }
+    const project = data.projects.find(project => project.id.toString() === projectId);
+    res.render('project', { project });
 });
 
 //404 handler

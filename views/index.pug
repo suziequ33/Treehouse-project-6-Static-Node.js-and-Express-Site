@@ -14,12 +14,14 @@ block content
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
+  
     each project in projects
+
       .cell 
-        a(href=project.live_link)
-          img.thumbnail(src=`/static/${project.image_urls[0]}`, alt=`Thumbnail for ${project.project_name}`)
+        a(href=`/project/${project.id}`)
+          img.thumbnail(src=`/static/${project.image_urls[0]}?w=550&h=550`, alt=`Thumbnail for ${project.project_name}`)
           h5= project.project_name
-          p= project.description
+        
 
       //- Use the Pug `each` iterator to loop over the projects in your data file  
       
