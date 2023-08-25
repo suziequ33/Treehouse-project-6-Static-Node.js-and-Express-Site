@@ -11,7 +11,8 @@ app.use('/static', express.static('public'));
 
 //"index" routes to render the "home" page with project data
 app.get('/', (req, res) => {
-    res.render('index', {projects: data.projects});
+    console.log(data.projects);
+    res.render('index', { projects: data.projects });
 });
 
 //'about' route to render the 'About' page
@@ -20,24 +21,30 @@ app.get('/about', (req, res) => {
 });
 
 //Dynmic 'project' routes based on project id
-app.get('/project/:id', (req, res) => {
+app.get('/project/:id', (req, res, next) => {
     const projectId = req.params.id;
     const project = data.projects.find(project => project.id.toString() === projectId);
+    if(!project) {
+        const error = new Error('Project not found');
+        error.status = 404;
+        next(error);
+    }
     res.render('project', { project });
 });
 
 //404 handler
 app.use((req, res, next) => {
-    const err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+    const error = new Error('Not Found');
+    error.status = 404;
+    next(error);
 });
 
 //global error handler
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    console.error(`Error: ${err.message}, Status: ${err.status}`);
-    res.render('error', {error: err});
+    err.status = err.status || 500;
+    err.message = err.message || 'Internal Server Error';
+    console.error(` ${err.status} - ${err.message}`);
+    res.status(err.status).render('error',  {error: err});
 });
 
 

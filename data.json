@@ -7,9 +7,7 @@
             "technologies":["JavaScript", "HTML", "CSS"],
             "live_link":"https://suziequ33.github.io/Project1-Random-Quote/",
             "github_link":"https://github.com/suziequ33/Project1-Random-Qoute",
-            "image_urls": [
-                "image/project1.jpg"
-            ]
+            "image_urls": ["image/project1.jpg"]
         },
         {
             "id": 1,
@@ -18,9 +16,7 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link":"https://suziequ33.github.io/Project2-Data-Pagination-And-filtering/",
             "github_link":"https://github.com/suziequ33/Project2-Data-Pagination-And-filtering",
-            "image_urls": [
-                "image/project2.jpg"
-            ]
+            "image_urls": ["image/project2.jpg"]
         },
         {
             "id": 2,
@@ -29,9 +25,7 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link":"https://suziequ33.github.io/Interactive-Form-project-3/",
             "github_link":"https://github.com/suziequ33/Interactive-Form-project-3",
-            "image_urls": [
-                "image/project3.jpg"
-            ]
+            "image_urls": ["image/project3.jpg"]
         },
         {
             "id": 3,
@@ -40,9 +34,7 @@
             "technologies": ["JavaScript", "HTML", "CSS"],
             "live_link":"https://suziequ33.github.io/treehouse-project-4-OOP-Game-Show-App/",
             "github_link":"https://github.com/suziequ33/treehouse-project-4-OOP-Game-Show-App",
-            "image_urls": [
-                "image/project4.jpg"
-            ]
+            "image_urls": ["image/project4.jpg"]
         },
         {
             "id": 4,
@@ -51,9 +43,7 @@
             "technologies":["JavaScript", "HTML", "CSS"],
             "live_link":"https://suziequ33.github.io/treehouse-project-5-Public-API-Requests/",
             "github_link":"https://github.com/suziequ33/treehouse-project-5-Public-API-Requests",
-            "image_urls": [
-                "image/project5.jpg"
-            ]
+            "image_urls": ["image/project5.jpg"]
         }
     ]
 }
