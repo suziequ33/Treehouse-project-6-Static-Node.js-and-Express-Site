@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const data = require('./data.json');
-//const path = require('path');
 
 //set the engine to pug
 app.set('view engine', 'pug');
@@ -11,7 +10,6 @@ app.use('/static', express.static('public'));
 
 //"index" routes to render the "home" page with project data
 app.get('/', (req, res) => {
-    console.log(data.projects);
     res.render('index', { projects: data.projects });
 });
 
